@@ -1,0 +1,88 @@
+[1mdiff --git a/.classpath b/.classpath[m
+[1mindex 3b70160..a896564 100644[m
+[1m--- a/.classpath[m
+[1m+++ b/.classpath[m
+[36m@@ -21,7 +21,36 @@[m
+ 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">[m
+ 		<attributes>[m
+ 			<attribute name="maven.pomderived" value="true"/>[m
+[31m-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="test" value="true"/>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="src" path="target/generated-sources/annotations">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="ignore_optional_problems" value="true"/>[m
+[32m+[m			[32m<attribute name="m2e-apt" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="ignore_optional_problems" value="true"/>[m
+[32m+[m			[32m<attribute name="m2e-apt" value="true"/>[m
+[32m+[m			[32m<attribute name="test" value="true"/>[m
+ 		</attributes>[m
+ 	</classpathentry>[m
+ 	<classpathentry kind="output" path="target/classes"/>[m
+[1mdiff --git a/.project b/.project[m
+[1mindex 19df1d3..2ce54b8 100644[m
+[1m--- a/.project[m
+[1m+++ b/.project[m
+[36m@@ -16,12 +16,12 @@[m
+ 			</arguments>[m
+ 		</buildCommand>[m
+ 		<buildCommand>[m
+[31m-			<name>org.eclipse.m2e.core.maven2Builder</name>[m
+[32m+[m			[32m<name>org.eclipse.wst.validation.validationbuilder</name>[m
+ 			<arguments>[m
+ 			</arguments>[m
+ 		</buildCommand>[m
+ 		<buildCommand>[m
+[31m-			<name>org.eclipse.wst.validation.validationbuilder</name>[m
+[32m+[m			[32m<name>org.eclipse.m2e.core.maven2Builder</name>[m
+ 			<arguments>[m
+ 			</arguments>[m
+ 		</buildCommand>[m
+[36m@@ -34,4 +34,15 @@[m
+ 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>[m
+ 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>[m
+ 	</natures>[m
+[32m+[m	[32m<filteredResources>[m
+[32m+[m		[32m<filter>[m
+[32m+[m			[32m<id>1789728004502</id>[m
+[32m+[m			[32m<name></name>[m
+[32m+[m			[32m<type>30</type>[m
+[32m+[m			[32m<matcher>[m
+[32m+[m				[32m<id>org.eclipse.core.resources.regexFilterMatcher</id>[m
+[32m+[m				[32m<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>[m
+[32m+[m			[32m</matcher>[m
+[32m+[m		[32m</filter>[m
+[32m+[m	[32m</filteredResources>[m
+ </projectDescription>[m
+[1mdiff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs[m
+[1mindex cac0df4..fa50df0 100644[m
+[1m--- a/.settings/org.eclipse.jdt.core.prefs[m
+[1m+++ b/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -7,5 +7,6 @@[m [morg.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled[m
+ org.eclipse.jdt.core.compiler.problem.enumIdentifier=error[m
+ org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning[m
+ org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=ignore[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.processAnnotations=disabled[m
+ org.eclipse.jdt.core.compiler.release=disabled[m
+ org.eclipse.jdt.core.compiler.source=1.8[m
